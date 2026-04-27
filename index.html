@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ウメボシ倶楽部</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🌸</span>
+        <span class="logo-text">ウメボシ倶楽部</span>
+      </div>
+      <button class="nav-toggle" aria-label="メニューを開く" onclick="toggleNav()">☰</button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#about">倶楽部紹介</a>
+        <a href="#events">イベント</a>
+        <a href="#gallery">過去のイベント</a>
+      </nav>
+    </div>
+    <!-- ティッカー -->
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <span>🌸 ウメボシ倶楽部へようこそ！</span>
+        <span>🏃 第6回 みんなの大運動会 10月12日開催！</span>
+        <span>🎉 大人も子どもも動物も大歓迎！</span>
+        <span>⭐ 笑顔の連鎖を一緒に作ろう！</span>
+        <span>🌸 ウメボシ倶楽部へようこそ！</span>
+        <span>🏃 第6回 みんなの大運動会 10月12日開催！</span>
+        <span>🎉 大人も子どもも動物も大歓迎！</span>
+        <span>⭐ 笑顔の連鎖を一緒に作ろう！</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== ヒーロー ===== -->
+  <section class="hero">
+    <img src="hero.png" alt="ウメボシ倶楽部" class="hero-img" />
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <div class="hero-badge">みんなあつまれ！</div>
+        <h1 class="hero-title">
+          ウメボシ<br />
+          <span class="hero-title-sub">倶楽部</span>
+        </h1>
+        <p class="hero-catch">
+          大人も子どもも一緒に楽しむ、<br />
+          元気いっぱいのコミュニティです！
+        </p>
+        <a href="#events" class="btn btn-hero">イベントをチェック！ 👇</a>
+      </div>
+    </div>
+    <!-- 浮遊デコ -->
+    <div class="hero-floats" aria-hidden="true">
+      <span class="float-el f1">⭐</span>
+      <span class="float-el f2">🎵</span>
+      <span class="float-el f3">💥</span>
+      <span class="float-el f4">🌈</span>
+      <span class="float-el f5">✨</span>
+    </div>
+  </section>
+
+  <!-- 波形区切り -->
+  <div class="wave wave-hero-about" aria-hidden="true">
+    <svg viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 C150,80 350,0 600,60 C850,120 1050,20 1200,60 L1200,80 L0,80 Z" fill="#FFF8DC"/>
+    </svg>
+  </div>
+
+  <!-- ===== 倶楽部紹介 ===== -->
+  <section class="about" id="about">
+    <!-- デコ丸 -->
+    <span class="deco-bubble b1" aria-hidden="true">★</span>
+    <span class="deco-bubble b2" aria-hidden="true">♪</span>
+    <span class="deco-bubble b3" aria-hidden="true">●</span>
+    <div class="container">
+      <div class="about-text-card">
+        <div class="speech-dot"></div>
+        <p>
+          ウメボシ倶楽部は、大人も子どもも動物も、<strong>笑顔・元気・絆</strong>を育てることを大切にしたコミュニティ団体です。<br /><br />
+          笑顔の連鎖を作れたらいいなーって思って活動しています。<br /><br />
+          年に1回運動会、2年に1回盆踊り、夏には離島へゆる～く息抜きしに合宿とさまざまなイベントを企画しておりますので、ぜひ気軽に参加してみてください！
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ギザギザ区切り -->
+  <div class="zigzag-divider zz-ab-ev" aria-hidden="true"></div>
+
+  <!-- ===== イベントスケジュール ===== -->
+  <section class="events" id="events">
+    <div class="container">
+      <h2 class="section-title pop-title">
+        📅 今後のイベント 📅
+      </h2>
+
+      <div class="event-list">
+        <article class="event-card pop-card">
+          <div class="event-date">
+            <span class="event-month">10月</span>
+            <span class="event-day">12</span>
+            <span class="event-weekday">月・祝</span>
+          </div>
+          <div class="event-info">
+            <span class="event-tag tag-red">🏃 スポーツ</span>
+            <h3 class="event-name">第6回 みんなの大運動会</h3>
+            <p class="event-detail">
+              <span>🕙 9:00 開場 ／ 9:45 開始 ／ 16:00 終了</span>
+              <span>📍 大阪府立臨海スポーツセンター</span>
+            </p>
+            <div class="event-fee">
+              <p class="fee-title">💴 参加費</p>
+              <ul class="fee-list">
+                <li>大人 <strong>3,500円</strong> / 人</li>
+                <li>家族（大人2人） <strong>6,000円</strong></li>
+                <li>応援参加券（競技参加なし） <strong>2,000円</strong></li>
+                <li>高校生以下 <strong>無料🎉</strong></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-join">参加する！ 🙋</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 波形区切り -->
+  <div class="wave wave-ev-gallery" aria-hidden="true">
+    <svg viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,60 C200,0 400,80 600,40 C800,0 1000,80 1200,30 L1200,80 L0,80 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+
+  <!-- ===== 過去のイベント ===== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 class="section-title pop-title">
+        📷 過去のイベント 📷
+      </h2>
+      <p class="gallery-sub">楽しい思い出がいっぱい！</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item pop-card tilt-left">
+          <div class="gallery-img placeholder" style="--ph-color:#fde8e8;"><span>🏃</span></div>
+          <p class="gallery-caption">2025年 秋の運動会</p>
+        </div>
+        <div class="gallery-item pop-card tilt-right">
+          <div class="gallery-img placeholder" style="--ph-color:#e8f4fd;"><span>🎋</span></div>
+          <p class="gallery-caption">2025年 七夕まつり</p>
+        </div>
+        <div class="gallery-item pop-card tilt-left">
+          <div class="gallery-img placeholder" style="--ph-color:#e8fde8;"><span>🌸</span></div>
+          <p class="gallery-caption">2025年 お花見ピクニック</p>
+        </div>
+        <div class="gallery-item pop-card tilt-right">
+          <div class="gallery-img placeholder" style="--ph-color:#fdf5e8;"><span>🎃</span></div>
+          <p class="gallery-caption">2025年 ハロウィンパーティ</p>
+        </div>
+        <div class="gallery-item pop-card tilt-left">
+          <div class="gallery-img placeholder" style="--ph-color:#f0e8fd;"><span>🎅</span></div>
+          <p class="gallery-caption">2025年 クリスマス会</p>
+        </div>
+        <div class="gallery-item pop-card tilt-right">
+          <div class="gallery-img placeholder" style="--ph-color:#fde8f5;"><span>🎍</span></div>
+          <p class="gallery-caption">2026年 新年会</p>
+        </div>
+        <div class="gallery-item pop-card tilt-left">
+          <div class="gallery-img placeholder" style="--ph-color:#e8fdfd;"><span>🎨</span></div>
+          <p class="gallery-caption">2026年 エコ工作教室</p>
+        </div>
+        <div class="gallery-item pop-card tilt-right">
+          <div class="gallery-img placeholder" style="--ph-color:#fdfde8;"><span>🍙</span></div>
+          <p class="gallery-caption">2026年 手作りおにぎり大会</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== フッター ===== -->
+  <div class="wave wave-footer" aria-hidden="true">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,30 C300,0 600,60 900,20 C1050,0 1150,50 1200,30 L1200,60 L0,60 Z" fill="#222222"/>
+    </svg>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">🌸 ウメボシ倶楽部</div>
+      <div class="footer-emojis" aria-hidden="true">🎉 ⭐ 🏃 🎵 🌈 ✨ 🎊</div>
+      <p class="footer-copy">© 2026 ウメボシ倶楽部. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('site-nav').classList.toggle('open');
+    }
+    document.querySelectorAll('.site-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('site-nav').classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
