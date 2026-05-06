@@ -441,6 +441,38 @@ img { max-width: 100%; display: block; }
 }
 .fee-list li strong { color: var(--red); font-size: 1.05rem; }
 
+/* 計画中カード */
+.event-card-planning {
+  border-style: dashed !important;
+  background: linear-gradient(135deg, #fffde7 0%, #fff8e1 100%) !important;
+}
+.event-date-planning {
+  background: var(--yellow) !important;
+  color: var(--black) !important;
+  border-right-color: var(--black) !important;
+}
+.event-day-plan {
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 2px 2px 0 rgba(0,0,0,.15);
+}
+.tag-yellow {
+  background: var(--yellow);
+  color: var(--black);
+  border: 2px solid var(--black);
+}
+.event-planning-text {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #444;
+  line-height: 1.9;
+  margin-top: 10px;
+  background: rgba(255,255,255,.7);
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+
 .join-note {
   margin-top: 16px;
   font-size: .92rem;
