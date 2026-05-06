@@ -445,11 +445,12 @@ img { max-width: 100%; display: block; }
   margin-top: 16px;
   font-size: .92rem;
   font-weight: 700;
-  color: var(--blue-dark);
-  background: var(--blue-light);
-  border-left: 4px solid var(--blue);
-  border-radius: 0 8px 8px 0;
+  color: var(--black);
+  background: var(--yellow);
+  border: 2px solid var(--black);
+  border-radius: 8px;
   padding: 10px 14px;
+  box-shadow: 2px 2px 0 var(--black);
 }
 
 /* ===== ギャラリー ===== */
