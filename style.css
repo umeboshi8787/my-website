@@ -441,6 +441,17 @@ img { max-width: 100%; display: block; }
 }
 .fee-list li strong { color: var(--red); font-size: 1.05rem; }
 
+.join-note {
+  margin-top: 16px;
+  font-size: .92rem;
+  font-weight: 700;
+  color: var(--blue-dark);
+  background: var(--blue-light);
+  border-left: 4px solid var(--blue);
+  border-radius: 0 8px 8px 0;
+  padding: 10px 14px;
+}
+
 /* ===== ギャラリー ===== */
 .gallery {
   padding: 80px 0 100px;
