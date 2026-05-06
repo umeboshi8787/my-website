@@ -496,6 +496,44 @@ img { max-width: 100%; display: block; }
   background-position: 0 0, 20px 20px;
 }
 
+/* 年グループ */
+.gallery-year-group {
+  margin-bottom: 56px;
+}
+.gallery-year-group:last-child {
+  margin-bottom: 0;
+}
+
+.gallery-year-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: var(--black);
+}
+.gallery-year-heading span {
+  background: var(--red);
+  color: var(--white);
+  padding: 4px 24px;
+  border-radius: 50px;
+  border: 3px solid var(--black);
+  box-shadow: 4px 4px 0 var(--black);
+  letter-spacing: .06em;
+}
+.gallery-year-heading::after {
+  content: '';
+  flex: 1;
+  height: 4px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--black) 0px, var(--black) 10px,
+    transparent 10px, transparent 20px
+  );
+  border-radius: 2px;
+}
+
 .gallery-sub {
   text-align: center;
   font-size: 1.1rem;
