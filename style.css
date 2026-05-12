@@ -266,6 +266,64 @@ img { max-width: 100%; display: block; }
   );
 }
 
+/* ===== SNSバー ===== */
+.social-bar {
+  background: var(--yellow-bg);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 20px 0;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 12px 28px;
+  border-radius: 50px;
+  border: 3px solid var(--black);
+  box-shadow: 4px 4px 0 var(--black);
+  transition: transform .15s, box-shadow .15s;
+  text-decoration: none;
+  letter-spacing: .04em;
+}
+.social-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--black);
+}
+.social-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--black);
+}
+.social-btn i {
+  font-size: 1.6rem;
+}
+
+.sns-instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: var(--white);
+}
+.sns-line {
+  background: #06C755;
+  color: var(--white);
+}
+
+@media (max-width: 600px) {
+  .social-bar {
+    gap: 12px;
+    padding: 16px 16px 0;
+  }
+  .social-btn {
+    padding: 10px 20px;
+    font-size: .9rem;
+  }
+  .social-btn i {
+    font-size: 1.3rem;
+  }
+}
+
 /* ===== 倶楽部紹介 ===== */
 .about {
   position: relative;
