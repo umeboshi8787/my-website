@@ -268,26 +268,25 @@ img { max-width: 100%; display: block; }
 
 /* ===== SNSバー ===== */
 .social-bar {
-  background: var(--yellow-bg);
+  background: transparent;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
-  padding: 20px 20px 0;
+  padding: 32px 20px;
 }
 
 .social-btn {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 900;
-  font-size: 1rem;
-  padding: 12px 28px;
-  border-radius: 50px;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
   border: 3px solid var(--black);
   box-shadow: 4px 4px 0 var(--black);
   transition: transform .15s, box-shadow .15s;
   text-decoration: none;
-  letter-spacing: .04em;
 }
 .social-btn:hover {
   transform: translate(-2px, -2px);
@@ -298,30 +297,21 @@ img { max-width: 100%; display: block; }
   box-shadow: 2px 2px 0 var(--black);
 }
 .social-btn i {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  color: var(--white);
 }
 
 .sns-instagram {
   background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-  color: var(--white);
 }
 .sns-line {
   background: #06C755;
-  color: var(--white);
 }
 
 @media (max-width: 600px) {
-  .social-bar {
-    gap: 12px;
-    padding: 16px 16px 0;
-  }
-  .social-btn {
-    padding: 10px 20px;
-    font-size: .9rem;
-  }
-  .social-btn i {
-    font-size: 1.3rem;
-  }
+  .social-bar { gap: 16px; padding: 24px 20px; }
+  .social-btn { width: 54px; height: 54px; }
+  .social-btn i { font-size: 1.7rem; }
 }
 
 /* ===== 倶楽部紹介 ===== */
